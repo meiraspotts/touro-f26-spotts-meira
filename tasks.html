@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Project</title>
+    <title>Tasks | [Project Name]</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,38 +12,40 @@
       <header>
         <p>Logo</p>
         <nav>
-          <p><button><a href="home.html">Home</a></button></p>  
-          <p><button><a href ="tasks.html">Tasks</a></button></p>
-          <p><button><a href ="schedule.html">Schedule</a></button></p>
+          <p><a href="home.html">Home</a></p>  
+          <p><a href ="tasks.html">Tasks</a></p>
+          <p><a href ="schedule.html">Schedule</a></p>
         </nav>
       </header>
 
     <!--INPUT TASKS SECTION-->
       <section>
-        <h2>Classes</h2>
-          <p>Class Name</p>
-          <p>Days</p>
-          <p>Start Time</p>
-          <p>End Time</p>
-          <button>Add Class</button> 
+        <h1>Add your classes, assignments, and activties</h1>
 
+        <h2>Classes</h2>
+          <p><label for="class-name">Class Name</label> <input id="class-name" name="class-name" /></p>
+          <p><label for="class-day">Day</label> <input id="class-day" name="class-day" /></p>
+          <p><label for="class-start">Start Time</label> <input id="class-start" name="class-start" /></p>
+          <p><label for="class-end-time">End Time</label> <input id="class-end-time" name="c lass-end-time" /></p>
+          <button>Add Class</button> 
+          
         <h2>Assignments</h2>
-          <p>Title</p>
-          <p>Due Date</p>
-          <p>Estimated Time</p>
-          <p>Priority</p>
+          <p><label for="assignment-title">Title</label> <input id="title" name="assignment-title" /></p>
+          <p><label for="due-date">Due Date</label> <input id="due-date" name="due-date" /></p>
+          <p><label for="assignment-estimated">Estimated Time</label> <input id="assignment-estimated" name="assignment-estimated" /></p>
+          <p><label for="assignment-priority">Priority</label> <input id="assignment-priority" name="assignment-priority" /></p>
           <button>Add Assignment</button> 
 
         <h2>Personal Activities</h2>
-          <p>Acvtivity Name</p>
-          <p>Day</p>
-          <p>Start Time</p>
-          <p>End Time</p>      
-          <p>Priority</p>
+          <p><label for="activity-name">Activity Name</label> <input id="activity-name" name="activity-name" /></p>
+          <p><label for="activity-day">Day</label> <input id="activity-day" name="activity-day" /></p>
+          <p><label for="activity-start">Start Time</label> <input id="activity-start" name="activity-start" /></p>
+          <p><label for="activtiy-end">End Time</label> <input id="activity-end" name="activity-end" /></p>    
+          <p><label for="acitvity-priority">Priority</label> <input id="acitvity-priority" name="acitvity-priority" /></p>
           <button>Add Activity</button> 
-          </section>
+      </section>
 
-        <p><button><a href="schedule.html">Generate Schedule</a></button></p>
+        <p><a href="schedule.html">Generate Schedule</a></p>
 
     <!--FOOTER-->
       <footer>

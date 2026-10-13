@@ -9,6 +9,16 @@
 
 /* START BELOW */
 body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+header {
+  grid-column: 1/6
+}
+
+
+body {
   font-family: system-ui, sans-serif;
   line-height: 1.5;
   padding: 1rem;
@@ -18,6 +28,7 @@ nav {
   border: 1px solid black;
   padding: 1rem;
   margin-bottom: 1rem;
+
 }
 
 section, footer {
