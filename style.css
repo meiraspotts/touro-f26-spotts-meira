@@ -8,13 +8,29 @@
 }
 
 /* START BELOW */
-body {
+
+.page {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
 }
 
-header {
-  grid-column: 1/6
+.nav,
+.hero,
+.footer {
+grid-column: 1 / 13;
+}
+
+.to_do {
+grid-column: 1 / 5;
+}
+
+.create {
+grid-column: 5 / 9;
+}
+
+.edit {
+grid-column: 9 / 13;
 }
 
 
