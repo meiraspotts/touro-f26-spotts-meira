@@ -18,6 +18,7 @@
 .nav,
 .hero,
 .input,
+.calendar,
 .footer {
 grid-column: 1 / 13;
 }
