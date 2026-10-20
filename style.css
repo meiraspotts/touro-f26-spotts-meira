@@ -68,11 +68,11 @@ a {
   color: black;
 }
 
-/*@media (max-width: 700px) {
+@media (max-width: 445px) {
   .to_do,
   .create,
-  .feature-3 {
+  .edit {
     grid-column: 1 / 13; 
   }
-}*/
+}
 
