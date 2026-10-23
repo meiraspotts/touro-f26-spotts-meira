@@ -76,3 +76,9 @@ a {
   }
 }
 
+@media (max-width: 270px) {
+  .input {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+}
