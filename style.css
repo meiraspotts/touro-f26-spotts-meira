@@ -32,19 +32,22 @@ grid-column: 1 / 13;
 /* Decided to split this section into 3 groups */
 .to_do {
 grid-column: 1 / 5;
+max-width: 65ch
 }
 
 .create {
 grid-column: 5 / 9;
+max-width: 65ch
 }
 
 .edit {
 grid-column: 9 / 13;
+max-width: 65ch
 }
 
 body {
   font-family: system-ui, sans-serif;
-  line-height: 1.5;
+  line-height: 1.5rem;
   padding: 1rem;
 }
 

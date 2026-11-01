@@ -18,3 +18,8 @@
 | How it works |  <p> |  Edit tasks or activities | user understands how the process works| 
 
 | Footer |  <p> |  © 2026 Between Classes | none | 
+
+
+## What the grid did when the content grew
+
+[My grid did not change becuase I did not have any fixed heights in my CSS. I also do not have any long pharagraphs of content that would have been cut off. I am not sure if I did something wrong, but I tried my best!]
