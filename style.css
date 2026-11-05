@@ -29,6 +29,19 @@ img {
 grid-column: 1 / 13;
 }
 
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
 /* Decided to split this section into 3 groups */
 .to_do {
 grid-column: 1 / 5;
