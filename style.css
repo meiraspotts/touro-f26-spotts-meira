@@ -42,7 +42,7 @@ nav {
   gap: 1rem;
 }
 
-.hero, .to_do, .edit, .create, .input {
+.hero, .to_do, .edit, .create, .input, .calendar {
   display: flex;
   flex-direction: column;
 }
@@ -105,6 +105,11 @@ a {
   .create,
   .edit {
     grid-column: 1 / 13; 
+  }
+  
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 

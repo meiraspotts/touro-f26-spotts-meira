@@ -10,5 +10,7 @@
 
 | Input | Classes, Assignments, and Personal activities | One (comlumn) | Flex | Classes on top, then assignments, with activities on the bottom  | 
 
-| Calendar | All the information in the calender | Two | Grid | Times in the column, days in row  | 
+| Calendar | All the information in the calender | One | Column | List of day, time, activity  | 
+## Couldn't figure out how to make it a grid so it's a list 
+
 
