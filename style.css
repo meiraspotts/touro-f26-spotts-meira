@@ -99,6 +99,19 @@ a {
   color: black;
 }
 
+/* WEEKLY CALENDAR */
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+}
+
+.day {
+  border: 1px solid black;
+  padding: 0.5rem;
+  min-width: 0;
+}
+
 @media (max-width: 445px) {
   .to_do,
   .create,
@@ -116,5 +129,11 @@ a {
   .input {
     overflow-wrap: break-word;
     word-wrap: break-word;
+  }
+}
+
+@media (max-width: 930px) {
+  .week-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
