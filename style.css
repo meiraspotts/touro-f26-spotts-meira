@@ -52,7 +52,6 @@ nav {
   flex-direction: row;
 }
 
-
 /* Decided to split this section into 3 groups */
 .to_do {
 grid-column: 1 / 5;
