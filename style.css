@@ -9,10 +9,35 @@
 
 /* START BELOW */
 
+
+/* === DESIGN VARIABLES === */
+:root {
+  /* COLORS */
+  --color-primary: #526D82;
+  --color-secondary: #A9BDCA;
+  --color-text: #293746;
+  --color-background: #F4F1EB;
+  --color-white: #FFFFFF;
+  --color-border: #D8DDE0;
+  --color-event: #E6EEF2;
+
+  /* SPACING */
+  --space-s: 0.5rem;
+  --space-m: 1rem;
+  --space-l: 2rem;
+
+  /* FONTS */
+  --font-heading: "Poppins", sans-serif;
+  --font-body: Arial, sans-serif;
+}
+
+
+/* === GRID LAYOUT === */
 .page {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
+  gap: var(--space-m);
+  background: var(--color-background);
 }
 
 img {
@@ -23,25 +48,31 @@ img {
 .nav,
 .hero,
 .input,
-.generate, /* Fixed a gap- changed to full width */
+.generate,
 .calendar,
 .footer {
-grid-column: 1 / 13;
+  grid-column: 1 / 13;
 }
 
 
+/* === NAVIGATION === */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: var(--space-m);
+  border: 1px solid var(--color-border);
+  padding: var(--space-m);
+  margin-bottom: var(--space-m);
 }
 
 .nav-links {
   display: flex;
-  gap: 1rem;
+  gap: var(--space-m);
 }
 
+
+/* === SECTIONS === */
 .hero, .to_do, .edit, .create, .input, .calendar {
   display: flex;
   flex-direction: column;
@@ -52,73 +83,85 @@ nav {
   flex-direction: row;
 }
 
-/* Decided to split this section into 3 groups */
+
+/* === HOW IT WORKS === */
 .to_do {
-grid-column: 1 / 5;
-max-width: 65ch
+  grid-column: 1 / 5;
 }
 
 .create {
-grid-column: 5 / 9;
-max-width: 65ch
+  grid-column: 5 / 9;
 }
 
 .edit {
-grid-column: 9 / 13;
-max-width: 65ch
+  grid-column: 9 / 13;
 }
 
+
+/* === GENERAL STYLING === */
 body {
-  font-family: system-ui, sans-serif;
+  font-family: var(--font-body);
   line-height: 1.5rem;
-  padding: 1rem;
-}
-
-nav {
-  border: 1px solid black;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  padding: var(--space-m);
+  background: var(--color-background);
+  color: var(--color-text);
 }
 
 section, footer {
-  border: 1px solid black;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-button {
-  padding: 0.5rem;
-  margin-bottom: 1rem;
+  border: 1px solid var(--color-border);
+  padding: var(--space-m);
+  margin-bottom: var(--space-m);
 }
 
 h1, h2, p {
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-m);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+
+button {
+  padding: var(--space-s);
+  margin-bottom: var(--space-m);
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
 }
 
 a {
-  color: black;
+  color: var(--color-primary);
 }
 
-/* WEEKLY CALENDAR */
+
+/* === WEEKLY CALENDAR === */
 .week-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 0.5rem;
+  gap: var(--space-s);
 }
 
 .day {
-  border: 1px solid black;
-  padding: 0.5rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  padding: var(--space-s);
   min-width: 0;
 }
 
+.day a {
+  background: var(--color-event);
+  color: var(--color-primary);
+}
+
+
+/* === MEDIA QUERY === */
 @media (max-width: 445px) {
   .to_do,
   .create,
   .edit {
-    grid-column: 1 / 13; 
+    grid-column: 1 / 13;
   }
-  
+
   nav {
     flex-direction: column;
     align-items: flex-start;
