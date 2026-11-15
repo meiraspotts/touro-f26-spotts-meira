@@ -123,18 +123,40 @@ h1, h2 {
 
 }
 
-button {
+button, .start a {
   padding: var(--space-s);
   margin-bottom: var(--space-m);
   background: var(--color-primary);
   color: var(--color-white);
   border: none;
+  cursor: pointer;
+
 }
 
 a {
   color: var(--color-primary);
+  text-decoration: none;
+  cursor: pointer;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+a:hover, 
+a:active,
+button:hover,
+button:active {
+  opacity: 0.7;
+}
+
+.current {
+  font-weight: bold;
+  text-underline-offset: 4px;
+}
 
 /* === WEEKLY CALENDAR === */
 .week-grid {
