@@ -39,17 +39,21 @@
   background: var(--color-background);
 }
 
+.logo {
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--space-m);
+  margin-bottom: 0;
+}
+
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
-.nav,
-.hero,
-.input,
-.generate,
-.calendar,
-.footer {
+.nav,.hero,.input,.generate,.calendar,.footer {
   grid-column: 1 / 13;
 }
 
@@ -72,16 +76,9 @@ nav {
 
 
 /* === SECTIONS === */
-.hero, .to_do, .edit, .create, .input, .calendar {
-  display: flex;
-  flex-direction: column;
+.hero, .to_do, .edit, .create, .input, .calendar, .footer {
+    grid-column: 1 / 13;
 }
-
-.footer {
-  display: flex;
-  flex-direction: row;
-}
-
 
 /* === HOW IT WORKS === */
 .to_do {
@@ -100,10 +97,14 @@ nav {
 /* === GENERAL STYLING === */
 body {
   font-family: var(--font-body);
-  line-height: 1.5rem;
+  line-height: 1.6rem;
   padding: var(--space-m);
   background: var(--color-background);
   color: var(--color-text);
+}
+
+p {
+  max-width: 65ch;
 }
 
 section, footer {
@@ -116,8 +117,10 @@ h1, h2, p {
   margin-bottom: var(--space-m);
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: var(--font-heading);
+  color: var(--color-primary);
+
 }
 
 button {
