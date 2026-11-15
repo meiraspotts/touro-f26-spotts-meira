@@ -19,7 +19,6 @@
   --color-background: #F4F1EB;
   --color-white: #FFFFFF;
   --color-border: #D8DDE0;
-  --color-event: #E6EEF2;
 
   /* SPACING */
   --space-s: 0.5rem;
@@ -149,7 +148,6 @@ a {
 }
 
 .day a {
-  background: var(--color-event);
   color: var(--color-primary);
 }
 
