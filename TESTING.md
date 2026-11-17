@@ -34,3 +34,20 @@ Push the footer to the bottom of the page
 ### From my Assignment 9 feedback
 Fix the add class button to show it doesn't actually work and it won't confuse the user 
 
+## What I changed
+1. Pushed 
+2. ...
+
+## Still on my list
+Not sure if I should change the front page and move the image below the instructions, but then no one would see the image. I think it works where the instructions aren't so nessessary (you can complete the task without it), but it's there if needed 
+
+## Final self-test
+- Task 1 works from the home page
+- Task 2 works from the tasks page
+- Task 3 works from the schedule page
+- Task 4 works from the tasks page (or any page one ends up on)
+- Every link and button goes somewhere or says "coming soon"
+- Works at phone width
+-Clicking Tab shows where I am 
+
+
