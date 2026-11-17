@@ -97,7 +97,7 @@ nav {
 /* === GENERAL STYLING === */
 body {
   font-family: var(--font-body);
-  line-height: 1.6rem;
+  line-height: 1.6;
   padding: var(--space-m);
   background: var(--color-background);
   color: var(--color-text);
