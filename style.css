@@ -74,12 +74,6 @@ nav {
   gap: var(--space-m);
 }
 
-
-/* === SECTIONS === */
-.hero, .to_do, .edit, .create, .input, .calendar, .footer {
-    grid-column: 1 / 13;
-}
-
 /* === HOW IT WORKS === */
 .to_do {
   grid-column: 1 / 5;
@@ -112,6 +106,7 @@ section, footer {
   padding: var(--space-m);
   margin-bottom: var(--space-m);
 }
+
 
 h1, h2, p {
   margin-bottom: var(--space-m);
