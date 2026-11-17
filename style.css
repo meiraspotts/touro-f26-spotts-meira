@@ -37,6 +37,7 @@
   grid-template-columns: repeat(12, 1fr);
   gap: var(--space-m);
   background: var(--color-background);
+  min-height: 100vh;
 }
 
 .logo {
@@ -151,6 +152,10 @@ button:active {
 .current {
   font-weight: bold;
   text-underline-offset: 4px;
+}
+
+.footer {
+  margin-top: auto;
 }
 
 /* === WEEKLY CALENDAR === */
