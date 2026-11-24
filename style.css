@@ -171,7 +171,7 @@ input:focus-visible {
   background: var(--color-white);
   padding: var(--space-s);
   min-width: 0;
-  transition: transform 0.3s,box-shadow 1s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .day:hover {
@@ -182,6 +182,19 @@ input:focus-visible {
 .day a {
   color: var(--color-primary);
 }
+
+/*@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.page {
+  animation: fadeIn 0.2s ease;
+} */
 
 
 /* === MEDIA QUERY === */
