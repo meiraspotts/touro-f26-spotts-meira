@@ -126,7 +126,7 @@ button, .start a {
   color: var(--color-white);
   border: none;
   cursor: pointer;
-
+  transition: opacity 0.3s ease;
 }
 
 a {
@@ -171,6 +171,12 @@ input:focus-visible {
   background: var(--color-white);
   padding: var(--space-s);
   min-width: 0;
+  transition: transform 0.3s,box-shadow 1s;
+}
+
+.day:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(41, 55, 70, 0.15);
 }
 
 .day a {
